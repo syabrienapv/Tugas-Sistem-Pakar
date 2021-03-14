@@ -2,17 +2,27 @@
 
 Forward Chaining adalah metode untuk mengetahui fakta-fakta atau informasi yang baru melalui aturan dan fakta yang ada.
 
-mammal(A) ==> vertebrate(A).
-vertebrate(A) ==> animal(A).
-vertebrate(A),flying(A) ==> bird(A).
-vertebrate("duck").
-flying("duck").
-mammal("cat").
+mammal(A) ==> vertebrate(A)
+
+vertebrate(A) ==> animal(A)
+
+vertebrate(A),flying(A) ==> bird(A)
+
+vertebrate("duck")
+
+flying("duck")
+
+mammal("cat")
+
 
 Aturan
 1. Jika fakta sama dengan mamalia maka hewan itu adalah vertebrata
 2. Jika fakta sama dengan vertebrata maka hewan itu adalah kingdom animal
 3. JIka fakta sama dengan vertebrata dan terbang maka hewan itu adalah burung
+
+```
+
+```
 
 1. global facts yaitu variabel fakta
 2. global is_changed yaitu variabel looping
